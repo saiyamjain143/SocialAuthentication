@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Visual="Material"
+             x:Class="SocialAuthentication.MainPage">
+
+    <StackLayout HorizontalOptions="FillAndExpand" Margin="20" VerticalOptions="CenterAndExpand">
+        <!-- Place new controls here -->
+        <Button Text="Login with Facebook" TextColor="White" BackgroundColor="#3B5998" StyleId="btnFacebook" x:Name="btnFacebook" Clicked="btnFacebook_Clicked" />
+    </StackLayout>
+
+</ContentPage>

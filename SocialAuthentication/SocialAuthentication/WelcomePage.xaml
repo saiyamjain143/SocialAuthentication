@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SocialAuthentication.WelcomePage">
+    <Grid>
+        <Button Text="Logout" HorizontalOptions="End" VerticalOptions="Start" Margin="20,10" Clicked="Button_Clicked" />
+        <StackLayout Margin="10,30" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image x:Name="imgProfile" />
+            <Label x:Name="lblName" FontSize="Large"/>
+            <Label x:Name="lblDoB" FontSize="Large"/>
+            <Label x:Name="lblEmail" FontSize="Large"/>
+        </StackLayout>
+        <Grid x:Name="gdBusy" IsVisible="False" BackgroundColor="Gray">
+            <Frame HorizontalOptions="Center" Padding="30" CornerRadius="10" HasShadow="True" BackgroundColor="White" VerticalOptions="Center">
+                <StackLayout>
+                    <ActivityIndicator IsRunning="True" />
+                    <Label Text="Loading..." FontSize="Large"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </Grid>
+</ContentPage>
