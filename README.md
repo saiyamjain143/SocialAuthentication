@@ -1,7 +1,7 @@
 # SocialAuthentication
 Social login using Xamarin.Forms
 
-Android and iOS implementation of login using social networking such as: 
+Android and iOS implementation of login using social networking sites such as: 
 Facebook,
 Google,
 Instagram
