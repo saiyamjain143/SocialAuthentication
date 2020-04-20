@@ -6,7 +6,7 @@ Facebook,
 Google,
 Instagram
 
-Will also include login using later:
+Will also include other login such as:
 Linkedin,
 Twitter,
 Microsoft
