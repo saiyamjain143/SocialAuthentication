@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "584042613344",
+    "firebase_url": "https://socialauthentication-54774.firebaseio.com",
+    "project_id": "socialauthentication-54774",
+    "storage_bucket": "socialauthentication-54774.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584042613344:android:9da88fd4799b00e4061105",
+        "android_client_info": {
+          "package_name": "com.saiyam.socialauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584042613344-m9uac4gcf08494ulhueqmvce12fhbnb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saiyam.socialauthentication",
+            "certificate_hash": "f971bf9fc3ca18c67efee2333326e9323dac7a1b"
+          }
+        },
+        {
+          "client_id": "584042613344-targa9u3f7r94a90n3peo49et50j1obu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvAH7HykmFv-8qL8Vf9SKyqc6r3nMx-7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584042613344-targa9u3f7r94a90n3peo49et50j1obu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

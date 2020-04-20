@@ -4,6 +4,7 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Plugin.FacebookClient;
+using Plugin.GoogleClient;
 
 namespace SocialAuthentication.Droid
 {
@@ -17,7 +18,9 @@ namespace SocialAuthentication.Droid
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
             FacebookClientManager.Initialize(this);
+            GoogleClientManager.Initialize(this);
             LoadApplication(new App());
         }
 
@@ -25,6 +28,7 @@ namespace SocialAuthentication.Droid
         {
             base.OnActivityResult(requestCode, resultCode, intent);
             FacebookClientManager.OnActivityResult(requestCode, resultCode, intent);
+            GoogleClientManager.OnAuthCompleted(requestCode, resultCode, intent);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

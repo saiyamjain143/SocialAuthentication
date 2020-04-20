@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using Plugin.FacebookClient;
+using Plugin.GoogleClient;
 using UIKit;
 
 namespace SocialAuthentication.iOS
@@ -24,7 +25,9 @@ namespace SocialAuthentication.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            FacebookClientManager.Initialize(app, options);
+            global::Xamarin.Forms.FormsMaterial.Init();
+            FacebookClientManager.Initialize(app, options); 
+            GoogleClientManager.Initialize();
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }
@@ -37,7 +40,14 @@ namespace SocialAuthentication.iOS
 
         public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
         {
-            return FacebookClientManager.OpenUrl(app, url, options);
+            switch (WelcomePage.LoginType)
+            {
+                case "facebook":
+                    return FacebookClientManager.OpenUrl(app, url, options);
+                case "google":
+                    return GoogleClientManager.OnOpenUrl(app, url, options);
+            }
+            return false;
         }
 
         public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)

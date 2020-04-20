@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>584042613344-dg5g76o75jsdj0dbe7e1i9dnhnd22rri.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.584042613344-dg5g76o75jsdj0dbe7e1i9dnhnd22rri</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>584042613344-m9uac4gcf08494ulhueqmvce12fhbnb3.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCgGPxrkXbl5V5dbBcnhiD9l9MzLtk45nw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>584042613344</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.saiyam.socialauthentication</string>
+	<key>PROJECT_ID</key>
+	<string>socialauthentication-54774</string>
+	<key>STORAGE_BUCKET</key>
+	<string>socialauthentication-54774.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:584042613344:ios:c78002365b6a0dec061105</string>
+	<key>DATABASE_URL</key>
+	<string>https://socialauthentication-54774.firebaseio.com</string>
+</dict>
+</plist>
